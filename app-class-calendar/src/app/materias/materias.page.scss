@@ -1,0 +1,69 @@
+.menu {
+    margin: auto;
+    font-size: 2.5em; /* aumenta o tamanho da fonte */
+  }
+.materias{
+    text-align: center;
+    color: black;
+    font-size: 1.1em;
+    font-weight: 500;
+    }
+.header{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin: 0;
+    }
+.link{
+        text-align: center;
+    }
+.icones{
+        text-align: center;
+    }
+.ion-page{
+        text-align: center;
+    }
+.icone{
+        --background: #ffffff;
+        --border-radius: 50%;
+        --box-shadow: none;
+      
+      
+        ion-icon {
+          font-size: 45px;
+          color: #ffffff;
+        }
+      }
+
+
+.retangulo {
+    display: flex;
+    justify-content: center; 
+  }
+  
+  .retangulo ion-col {
+    height: 60px;
+    border-radius: 20px;
+    margin: 12px;
+    background-color: rgb(192,192,192);
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease-in-out; /* adiciona uma transição suave */
+    color: black;
+    font-size: 1.1em;
+    font-weight: 500;
+    padding-left: 15px;
+    &:hover {
+      transform: scale(1.1); /* aumenta o tamanho ao passar o mouse */
+    }
+  }
+  ion-content.conteudo{
+    --background:  #fdfdfdf5;
+  }
+ 
+  
