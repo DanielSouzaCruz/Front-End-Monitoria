@@ -1,12 +1,24 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title class="ion-text-center">PERFIL</ion-title>
+  <ion-toolbar class="navebar">
+    <ion-title>PERFIL</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-<ion-grid *ngFor="let dado of dados;">
-
+<ion-grid>
+  <ion-row>
+    <ion-col class="icon">
+      <ion-icon name="person-circle"></ion-icon>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col class="ion-text-center">
+      Aluno
+    </ion-col>
+  </ion-row>
+</ion-grid>
+  
+<ion-grid class="grid" *ngFor="let dado of dados;">
   <ion-col >
     <ion-item>
         Nome: {{dado.nome}}
@@ -37,20 +49,23 @@
     </ion-item>
   </ion-col>
 
+ <!-- Não irá precisar disto.
   <ion-col >
     <ion-item>
         Senha: {{dado.senha}}
     </ion-item>
-  </ion-col>
-</ion-grid>
+  </ion-col>-->
 
   <ion-row>
-    <ion-col class="butao">
-      <ion-button style="--background: #888888" shape="round" size="large">
+    <ion-col class="col" >
+      <ion-button class="butao" size="large" shape="round" >
         <ion-icon name="create-outline"></ion-icon>
       </ion-button>
     </ion-col>
   </ion-row>
+  
+</ion-grid>  
+
 </ion-content>
 
 <ion-footer [translucent]="true">
