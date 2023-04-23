@@ -1,73 +1,76 @@
 <ion-header [translucent]="true">
   <ion-toolbar class="navebar">
-    <ion-title>PERFIL</ion-title>
+    <ion-title>Perfil</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-<ion-grid>
-  <ion-row>
-    <ion-col class="icon">
-      <ion-icon name="person-circle"></ion-icon>
-    </ion-col>
-  </ion-row>
-  <ion-row>
-    <ion-col class="ion-text-center">
-      Aluno
-    </ion-col>
-  </ion-row>
-</ion-grid>
-  
-<ion-grid class="grid" *ngFor="let dado of dados;">
-  <ion-col >
-    <ion-item>
+  <ion-grid>
+    <ion-row>
+      <ion-col class="icon">
+        <ion-icon name="person-circle"></ion-icon>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col class="ion-text-center">
+        Aluno
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-grid class="grid" *ngFor="let dado of dados;">
+    <ion-col>
+      <ion-item>
         Nome: {{dado.nome}}
-    </ion-item>
-  </ion-col>
-  
-  <ion-col >
-    <ion-item>
-        CPF: {{dado.cpf}}
-    </ion-item>
-  </ion-col>
-
-  <ion-col >
-    <ion-item>
-        Turma: {{dado.turma}}
-    </ion-item>
-  </ion-col>
-
-  <ion-col >
-    <ion-item>
-        Telefone: {{dado.telefone}}
-    </ion-item>
-  </ion-col>
-
-  <ion-col >
-    <ion-item>
-        Endereço: {{dado.endereco}}
-    </ion-item>
-  </ion-col>
-
- <!-- Não irá precisar disto.
-  <ion-col >
-    <ion-item>
-        Senha: {{dado.senha}}
-    </ion-item>
-  </ion-col>-->
-
-  <ion-row>
-    <ion-col class="col" >
-      <ion-button class="butao" size="large" shape="round" >
-        <ion-icon name="create-outline"></ion-icon>
-      </ion-button>
+      </ion-item>
     </ion-col>
-  </ion-row>
-  
-</ion-grid>  
 
+    <ion-col>
+      <ion-item>
+        CPF: {{dado.cpf}}
+      </ion-item>
+    </ion-col>
+
+    <ion-col>
+      <ion-item>
+        Turma: {{dado.turma}}
+      </ion-item>
+    </ion-col>
+
+    <ion-col>
+      <ion-item>
+        Telefone: {{dado.telefone}}
+      </ion-item>
+    </ion-col>
+
+    <ion-col>
+      <ion-item>
+        Endereço: {{dado.endereco}}
+      </ion-item>
+    </ion-col>
+  </ion-grid>
+
+  <ion-fab class="butao" slot="fixed" vertical="bottom" horizontal="end">
+    <ion-fab-button size="large" class="botao">
+      <ion-icon name="create-outline"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
 </ion-content>
 
 <ion-footer [translucent]="true">
-  <ion-toolbar></ion-toolbar>
+  <ion-toolbar class="navebar">
+    <ion-row>
+      <ion-col size="4" class="icones">
+        <ion-icon name="home" size="large"></ion-icon>
+      </ion-col>
+
+      <ion-col size="4" class="icones">
+        <ion-icon name="calendar" size="large"></ion-icon>
+      </ion-col>
+
+      <ion-col size="4" class="icones">
+        <ion-icon name="chatbubbles" size="large"></ion-icon>
+      </ion-col>
+    </ion-row>
+  </ion-toolbar>
 </ion-footer>

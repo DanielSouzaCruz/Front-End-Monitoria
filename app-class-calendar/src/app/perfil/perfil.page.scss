@@ -1,7 +1,14 @@
 .col { 
   text-align: end;
-  }
+}
 
-.butao {
-  --background: #888888
+.butao{
+  --background: #ffffff;
+  --border-radius: 50%;
+  --box-shadow: none;
+
+  ion-icon {
+    font-size: 35px;
+    color: #ffffff;
+  }
 }

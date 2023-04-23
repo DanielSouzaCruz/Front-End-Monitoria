@@ -20,6 +20,7 @@ export class PerfilPage implements OnInit {
     endereco: 'Rua Carls Varls Charls',
     senha:'**********'
   }]
+  
   constructor() { }
 
   ngOnInit() {

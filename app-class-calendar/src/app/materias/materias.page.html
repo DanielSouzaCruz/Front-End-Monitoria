@@ -1,88 +1,84 @@
-   
-   <!-- Logo do menu -->
-   <ion-menu contentId="main-content">
-    <ion-header>
-      <ion-toolbar>
-        <ion-title>Menu</ion-title>
-      </ion-toolbar>
-    </ion-header>
-  
-    <!-- conteudo do menu -->
-    <ion-content class="ion-padding">Conteudo</ion-content>
-  </ion-menu>
-  
-  <!-- Logo do lado do menu -->
-  <div id="main-content">
-    <ion-header>
-      <ion-toolbar>
-        <ion-buttons slot="start">
-          <ion-menu-button class="menu"></ion-menu-button>
-        </ion-buttons>
-        <ion-title class="header">Matérias</ion-title>
-      </ion-toolbar>
-    </ion-header>
-  </div>
-     <!-- conteudo do centro -->
-    <ion-content class="conteudo">
-      <ion-row >
-        <ion-col></ion-col>
-        <ion-col size="12" class="materias">
-         Selecione a matéria desejada:
-        </ion-col>
-      </ion-row>
-      <!-- colunas das materias -->
-      <ion-grid>
-        <ion-row class="retangulo">
-          <ion-col size="11">Português</ion-col>
-          <ion-col size="11">Literatura</ion-col>
-          <ion-col size="11">Redação</ion-col>
-          <ion-col size="11">Matematica</ion-col>
-          <ion-col size="11">Quimica</ion-col>
-          <ion-col size="11">Fisica</ion-col>
-        </ion-row>
-      </ion-grid>
+<!-- Logo do menu -->
+<ion-menu contentId="main-content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>Menu</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <!-- conteudo do menu -->
+  <ion-content class="ion-padding">Conteudo</ion-content>
+</ion-menu>
 
-      <!-- botao do canto -->
-      <ion-fab class="icone" slot="fixed" vertical="bottom" horizontal="end">
-        <ion-fab-button size="large" class="botao">
-          <ion-icon name="add"></ion-icon>
-        </ion-fab-button>
+<!-- Logo do lado do menu -->
+<div id="main-content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-menu-button class="menu"></ion-menu-button>
+      </ion-buttons>
+      <ion-title class="header">Matérias</ion-title>
+    </ion-toolbar>
+  </ion-header>
+</div>
+
+<!-- conteudo do centro -->
+<ion-content class="conteudo">
+  <ion-row>
+    <ion-col></ion-col>
+    <ion-col size="12" class="materias">
+      Selecione a matéria desejada:
+    </ion-col>
+  </ion-row>
   
-        <!-- icones ao apertar o botao -->
-        <ion-fab-list side="top">
-          <ion-fab-button>
-            <ion-icon name="document"></ion-icon>
-          </ion-fab-button>
-          <ion-fab-button>
-            <ion-icon name="color-palette"></ion-icon>
-          </ion-fab-button>
-          <ion-fab-button>
-            <ion-icon name="globe"></ion-icon>
-          </ion-fab-button>
-        </ion-fab-list>
-        </ion-fab>
-  
-    
-    </ion-content>
-  
-    <!-- botoes de baixo -->
-    <ion-footer [translucent]="true">
-      <ion-toolbar >
-        <ion-row>
-  
-       <ion-col size="4" class="icones">
+  <!-- colunas das materias -->
+  <ion-grid>
+    <ion-row class="retangulo">
+      <ion-col size="11">Português</ion-col>
+      <ion-col size="11">Literatura</ion-col>
+      <ion-col size="11">Redação</ion-col>
+      <ion-col size="11">Matematica</ion-col>
+      <ion-col size="11">Quimica</ion-col>
+      <ion-col size="11">Fisica</ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <!-- botao do canto -->
+  <ion-fab class="icone" slot="fixed" vertical="bottom" horizontal="end">
+    <ion-fab-button size="large" class="botao">
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+
+    <!-- icones ao apertar o botao -->
+    <ion-fab-list side="top">
+      <ion-fab-button>
+        <ion-icon name="document"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-button>
+        <ion-icon name="color-palette"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-button>
+        <ion-icon name="globe"></ion-icon>
+      </ion-fab-button>
+    </ion-fab-list>
+  </ion-fab>
+</ion-content>
+
+<!-- botoes de baixo -->
+<ion-footer [translucent]="true">
+  <ion-toolbar>
+    <ion-row>
+
+      <ion-col size="4" class="icones">
         <ion-icon name="home" size="large"></ion-icon>
       </ion-col>
-  
+
       <ion-col size="4" class="icones">
         <ion-icon name="calendar" size="large"></ion-icon>
       </ion-col>
-  
+
       <ion-col size="4" class="icones">
         <ion-icon name="chatbubbles" size="large"></ion-icon>
-       </ion-col>
-  
-      </ion-row>
-      </ion-toolbar>
-    </ion-footer>
-  
+      </ion-col>
+    </ion-row>
+  </ion-toolbar>
+</ion-footer>
