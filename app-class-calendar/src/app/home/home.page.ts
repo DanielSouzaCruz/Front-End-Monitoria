@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicModule } from '@ionic/angular';
+import { IonicModule, NavController } from '@ionic/angular';
 
 @Component({
   selector: 'app-home',
@@ -9,5 +9,9 @@ import { IonicModule } from '@ionic/angular';
   imports: [IonicModule],
 })
 export class HomePage {
-  constructor() {}
+  constructor(private navCtrl: NavController) {}
+
+  goPerfil(){
+    this.navCtrl.navigateForward('perfil')
+  }
 }

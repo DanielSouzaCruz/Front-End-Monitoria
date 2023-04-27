@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { IonicModule } from '@ionic/angular';
+import { IonicModule, NavController } from '@ionic/angular';
 
 @Component({
   selector: 'app-perfil',
@@ -21,9 +21,13 @@ export class PerfilPage implements OnInit {
     senha:'**********'
   }]
   
-  constructor() { }
+  constructor(private navCtrl: NavController) { }
 
   ngOnInit() {
+  }
+
+  goHome(){
+    this.navCtrl.navigateForward('home')
   }
 
 }
