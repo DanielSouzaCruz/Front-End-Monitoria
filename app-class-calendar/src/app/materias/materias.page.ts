@@ -18,7 +18,7 @@ export class MateriasPage implements OnInit {
   }
 
   goHome(){
-    this.navCtrl.navigateForward('home')
+    this.navCtrl.navigateBack('home')
   }
 
 }

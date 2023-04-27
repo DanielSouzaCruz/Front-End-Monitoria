@@ -27,7 +27,7 @@ export class PerfilPage implements OnInit {
   }
 
   goHome(){
-    this.navCtrl.navigateForward('home')
+    this.navCtrl.navigateBack('home')
   }
 
 }
