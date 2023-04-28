@@ -22,6 +22,10 @@ export const routes: Routes = [
   {
     path: 'materias',
     loadComponent: () => import('./materias/materias.page').then( m => m.MateriasPage)
+  },  {
+    path: 'login',
+    loadComponent: () => import('./login/login.page').then( m => m.LoginPage)
   },
+
 
 ];
