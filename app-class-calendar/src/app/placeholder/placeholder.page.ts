@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { IonicModule } from '@ionic/angular';
+import { IonicModule, NavController } from '@ionic/angular';
 
 @Component({
   selector: 'app-placeholder',
@@ -12,7 +12,15 @@ import { IonicModule } from '@ionic/angular';
 })
 export class PlaceholderPage implements OnInit {
 
-  constructor() { }
+  constructor(private navCtrl: NavController) { }
+
+  goPerfil(){
+    this.navCtrl.navigateForward('perfil')
+  }
+
+  goMaterias(){
+    this.navCtrl.navigateForward('materias')
+  }
 
   ngOnInit() {
   }

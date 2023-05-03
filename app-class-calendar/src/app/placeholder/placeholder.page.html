@@ -7,7 +7,10 @@
   </ion-header>
 
   <!-- conteudo do menu -->
-  <ion-content class="ion-padding">Conteudo</ion-content>
+  <ion-content class="ion-padding">
+    <ion-row (click)="goPerfil()"> Perfil</ion-row>
+    <ion-row (click)="goMaterias()">Materias</ion-row>
+  </ion-content>
 </ion-menu>
 
 <!-- Logo do lado do menu -->
