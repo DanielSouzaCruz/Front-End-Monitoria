@@ -30,6 +30,10 @@ export const routes: Routes = [
     path: 'professores',
     loadComponent: () => import('./professores/professores.page').then( m => m.ProfessoresPage)
   },
+  {
+    path: 'agendamentos',
+    loadComponent: () => import('./agendamentos/agendamentos.page').then( m => m.AgendamentosPage)
+  },
 
 
 ];

@@ -1,7 +1,21 @@
+.header{
+  --ion-background-color: rgb(30, 144, 255);
+}
+.titulo{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: whitesmoke;
+}
+.icone-menu{
+  font-size: 2.5em;
+  color: whitesmoke;
+}
 .menu {
+  color: white;
   margin: auto;
   font-size: 2.5em;
-  /* aumenta o tamanho da fonte */
 }
 
 .materias {
@@ -11,28 +25,9 @@
   font-weight: 500;
 }
 
-.header {
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  margin: 0;
-}
-
-.link {
-  text-align: center;
-}
-
 .icones {
   text-align: center;
-}
-
-.ion-page {
-  text-align: center;
+  color: whitesmoke;
 }
 
 .icone {
@@ -74,4 +69,7 @@
 
 ion-content.conteudo {
   --background: #fdfdfdf5;
+}
+.footer{
+  --ion-background-color: rgb(30, 144, 255);
 }

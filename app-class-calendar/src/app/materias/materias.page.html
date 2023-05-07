@@ -1,10 +1,10 @@
-<ion-header [translucent]="true">
+<ion-header [translucent]="true" class="header">
   <ion-toolbar>
-    <ion-title class="ion-text-center">
+    <ion-title class="titulo">
       Materias
     </ion-title>
     <ion-buttons slot="start">
-      <ion-menu-button menu="main-menu"></ion-menu-button>
+      <ion-menu-button menu="main-menu" class="icone-menu"></ion-menu-button>
     </ion-buttons>
   </ion-toolbar>
 </ion-header>
@@ -12,6 +12,7 @@
 <!-- conteudo do centro -->
 <ion-content class="conteudo">
   <ion-row>
+    <ion-col></ion-col>
     <ion-col size="12" class="materias">
       Selecione a matéria desejada:
     </ion-col>
@@ -29,29 +30,10 @@
     </ion-row>
   </ion-grid>
 
-  <!-- botao do canto -->
-  <ion-fab class="icone" slot="fixed" vertical="bottom" horizontal="end">
-    <ion-fab-button size="large" class="botao">
-      <ion-icon name="add"></ion-icon>
-    </ion-fab-button>
-
-    <!-- icones ao apertar o botao -->
-    <ion-fab-list side="top">
-      <ion-fab-button>
-        <ion-icon name="document"></ion-icon>
-      </ion-fab-button>
-      <ion-fab-button>
-        <ion-icon name="color-palette"></ion-icon>
-      </ion-fab-button>
-      <ion-fab-button>
-        <ion-icon name="globe"></ion-icon>
-      </ion-fab-button>
-    </ion-fab-list>
-  </ion-fab>
 </ion-content>
 
 <!-- botoes de baixo -->
-<ion-footer [translucent]="true">
+<ion-footer [translucent]="true" class="footer">
   <ion-toolbar>
     <ion-row>
 

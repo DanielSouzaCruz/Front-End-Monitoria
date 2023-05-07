@@ -1,82 +1,61 @@
-.menu {
-    margin: auto;
-    font-size: 2.5em;
-    /* aumenta o tamanho da fonte */
-  }
-  
-  .agendamento {
-  
-    text-align: center;
-    color: black;
-    font-size: 1.1em;
-    font-weight: 500;
-  }
-  
-  .header {
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    margin: 0;
-  }
-  .icones {
-    text-align: center;
-  }
-  
-  .ion-page {
-    text-align: center;
-  }
-  
-  .icone {
-    --background: #ffffff;
-    --border-radius: 50%;
-    --box-shadow: none;
-  
-    ion-icon {
-      font-size: 45px;
-      color: #ffffff;
-    }
-  }
-  
-  ion-content.conteudo {
-    --background: #fdfdfdf5;
-  }
-  .quadrado-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); //duas colunas com largura igual
-    grid-auto-rows: 1fr; //altura das linhas igual
-    grid-gap: 23px; //espaçamento entre os quadrados
-    
-    ion-col {
-      background-color: rgb(192, 192, 192);
-      border-radius: 20px;
-      color: black;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 150px;
-      font-size: 0.9em;
-      font-weight: 500;
-      transition: all 0.3s ease-in-out;
-  
-      &:hover {
-        transform: scale(1.1);
-      }
-  
-      .icone-perf {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 90px;
-        padding-bottom: 10px;
-      }
-      ion-icon {
-        color:blue($color: #000000);
-      }
-    }
-  }
+<ion-header [translucent]="true" class="header">
+  <ion-toolbar>
+    <ion-title class="titulo">
+      Agendamentos
+    </ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button menu="main-menu" class="icone-menu"></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content class="conteudo">
+  <ion-row>
+    <ion-col></ion-col>
+    <ion-col size="12" class="agendamento">
+      Nenhum agendamento confirmado!
+    </ion-col>
+    <ion-col size="12" class="link">
+      <a href="">Agendar monitoria</a>
+    </ion-col>
+  </ion-row>
+
+  <!-- botao do canto -->
+  <ion-fab class="icone" slot="fixed" vertical="bottom" horizontal="end">
+    <ion-fab-button size="large" class="botao">
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+
+   
+    <ion-fab-list side="top">
+      <ion-fab-button >
+        <ion-icon name="document" class="botao-icones"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-button >
+        <ion-icon name="color-palette" class="botao-icones"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-button >
+        <ion-icon name="globe" class="botao-icones"></ion-icon>
+      </ion-fab-button>
+    </ion-fab-list>
+  </ion-fab>
+</ion-content>
+
+<ion-footer [translucent]="true" class="footer">
+  <ion-toolbar>
+    <ion-row>
+      <ion-col size="4" class="icones">
+        <ion-icon name="home" size="large"></ion-icon>
+      </ion-col>
+
+      <ion-col size="4" class="icones">
+        <ion-icon name="calendar" size="large"></ion-icon>
+      </ion-col>
+
+      <ion-col size="4" class="icones">
+        <ion-icon name="chatbubbles" size="large"></ion-icon>
+      </ion-col>
+    </ion-row>
+  </ion-toolbar>
+</ion-footer>
