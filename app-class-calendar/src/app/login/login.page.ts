@@ -14,10 +14,11 @@ export class LoginPage implements OnInit {
 
   constructor(private navCtrl: NavController) { }
 
-  goPerfil(){
-    this.navCtrl.navigateForward('perfil')
+  goHome(){
+    this.navCtrl.navigateForward('home')
   }
   ngOnInit() {
   }
 
 }
+

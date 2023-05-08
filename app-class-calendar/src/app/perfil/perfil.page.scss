@@ -1,28 +1,29 @@
 .header{
-  --ion-background-color: rgb(30, 144, 255);
-}
-.icone-menu{
-  font-size: 2.5em;
-  color: whitesmoke;
-}
-.titulo{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: whitesmoke;
-}
-.col { 
-  text-align: end;
-}
-
-.butao{
-  --background: #ffffff;
-  --border-radius: 50%;
-  --box-shadow: none;
-
-  ion-icon {
-    font-size: 35px;
-    color: #ffffff;
+    --ion-background-color: rgb(30, 144, 255);
   }
-}
+  .icone-menu{
+    font-size: 2.5em;
+    color: whitesmoke;
+  }
+  .titulo{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: whitesmoke;
+  }
+  .col { 
+    text-align: end;
+  }
+  
+  .butao{
+    --background: #ffffff;
+    --border-radius: 50%;
+    --box-shadow: none;
+  
+    ion-icon {
+      font-size: 35px;
+      color: #ffffff;
+    }
+  }
+  

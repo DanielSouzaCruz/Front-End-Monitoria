@@ -4,13 +4,13 @@ import { FormsModule } from '@angular/forms';
 import { IonicModule, NavController } from '@ionic/angular';
 
 @Component({
-  selector: 'app-materias',
-  templateUrl: './materias.page.html',
-  styleUrls: ['./materias.page.scss'],
+  selector: 'app-materia',
+  templateUrl: './materia.page.html',
+  styleUrls: ['./materia.page.scss'],
   standalone: true,
   imports: [IonicModule, CommonModule, FormsModule]
 })
-export class MateriasPage implements OnInit {
+export class MateriaPage implements OnInit {
 
   constructor(private navCtrl: NavController) { }
 
