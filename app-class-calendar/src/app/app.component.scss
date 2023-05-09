@@ -1,0 +1,21 @@
+.menu-background {
+    height: 88px;
+    width:full;
+    background: blue;
+
+
+}
+.menu-item{
+    margin:0px;
+
+    ion-icon{
+        margin-right:20px;
+        color: rgb(20, 175, 180);
+    }
+
+    ion-item{
+        padding-left: 20px;
+        margin-bottom:10px;
+    }
+
+}
