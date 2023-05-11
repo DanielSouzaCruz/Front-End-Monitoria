@@ -28,6 +28,8 @@
 .header{
     --ion-background-color: rgb(56, 236, 86);
 }
+
+
 .menu-icon {
     font-size: 25px;
 }
@@ -56,3 +58,16 @@
     text-align: center;
     --ion-background-color: rgb(56, 236, 86);
     }
+
+.butao {
+    --background: #ffffff;
+    --border-radius: 50%;
+    --box-shadow: none;
+    margin: 15px;
+
+    ion-icon {
+    --background: #ffffff;
+    font-size: 35px;
+    color: #ffffff;
+    }
+}

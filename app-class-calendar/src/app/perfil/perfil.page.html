@@ -1,14 +1,13 @@
 <ion-header [translucent]="true" class="header">
   <ion-toolbar>
     <ion-title class="titulo">
-      Perfil
+        PERFIL
     </ion-title>
-    <ion-buttons slot="start" >
+    <ion-buttons slot="start">
       <ion-menu-button menu="main-menu" class="icone-menu"></ion-menu-button>
     </ion-buttons>
   </ion-toolbar>
 </ion-header>
-
 <ion-content>
   <ion-grid>
     <ion-row>
@@ -22,63 +21,50 @@
       </ion-col>
     </ion-row>
   </ion-grid>
-
   <ion-grid class="grid" *ngFor="let dado of dados;">
     <ion-col>
       <ion-item>
         Nome: {{dado.nome}}
       </ion-item>
     </ion-col>
-
     <ion-col>
       <ion-item>
         CPF: {{dado.cpf}}
       </ion-item>
     </ion-col>
-
     <ion-col>
       <ion-item>
         Turma: {{dado.turma}}
       </ion-item>
     </ion-col>
-
     <ion-col>
       <ion-item>
         Telefone: {{dado.telefone}}
       </ion-item>
     </ion-col>
-
     <ion-col>
       <ion-item>
         Endereço: {{dado.endereco}}
       </ion-item>
     </ion-col>
   </ion-grid>
-
   <ion-fab class="butao" slot="fixed" vertical="bottom" horizontal="end">
     <ion-fab-button color="success" id="formulario-ajuda" size="large">
       <ion-icon name="information-circle-outline"></ion-icon>
-        <ion-alert
-        trigger="formulario-ajuda"
-        header="Formulário de Suporte"
-        [buttons]="alertButtons"
-        [inputs]="alertInputs"
-      ></ion-alert>
+      <ion-alert trigger="formulario-ajuda" header="Formulário de Suporte" [buttons]="alertButtons"
+        [inputs]="alertInputs"></ion-alert>
     </ion-fab-button>
   </ion-fab>
 </ion-content>
-
 <ion-footer [translucent]="true">
   <ion-toolbar class="navebar">
     <ion-row>
       <ion-col size="4" class="icones">
         <ion-icon name="home" size="large" (click)="goHome()"></ion-icon>
       </ion-col>
-
       <ion-col size="4" class="icones">
         <ion-icon name="calendar" size="large"></ion-icon>
       </ion-col>
-
       <ion-col size="4" class="icones">
         <ion-icon name="chatbubbles" size="large"></ion-icon>
       </ion-col>

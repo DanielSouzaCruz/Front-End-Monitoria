@@ -12,15 +12,15 @@ import { IonicModule, NavController } from '@ionic/angular';
 })
 export class PerfilPage implements OnInit {
 
-  public dados =[{
+  public dados = [{
     nome: 'Carls',
-    cpf: 1111111111-1,
+    cpf: 1111111111 - 1,
     turma: '3°A',
     telefone: '999999999',
     endereco: 'Rua Carls Varls Charls',
-    senha:'**********'
+    senha: '**********'
   }]
-  
+
   public alertButtons = ['Enviar'];
   public alertInputs = [
     {
@@ -47,14 +47,14 @@ export class PerfilPage implements OnInit {
       type: 'textarea',
       placeholder: 'Descrição da solicitação',
     },
-    ];
+  ];
 
   constructor(private navCtrl: NavController) { }
 
   ngOnInit() {
   }
 
-  goHome(){
+  goHome() {
     this.navCtrl.navigateBack('home')
   }
 

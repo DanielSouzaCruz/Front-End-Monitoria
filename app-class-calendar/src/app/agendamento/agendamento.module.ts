@@ -17,4 +17,4 @@ import { AgendamentoPage } from './agendamento.page';
   ],
   declarations: [AgendamentoPage]
 })
-export class AgendamentoPageModule {}
+export class AgendamentoPageModule { }
