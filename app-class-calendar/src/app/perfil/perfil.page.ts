@@ -21,6 +21,34 @@ export class PerfilPage implements OnInit {
     senha:'**********'
   }]
   
+  public alertButtons = ['Enviar'];
+  public alertInputs = [
+    {
+      type: 'string',
+      placeholder: 'Nome Completo',
+      attributes: {
+        maxlength: 100,
+      },
+    },
+    {
+      placeholder: 'Celular',
+      attributes: {
+        minlength: 11,
+        maxlength: 11,
+      },
+    },
+    {
+      type: 'email',
+      placeholder: 'Email',
+      min: 1,
+      max: 100,
+    },
+    {
+      type: 'textarea',
+      placeholder: 'Descrição da solicitação',
+    },
+    ];
+
   constructor(private navCtrl: NavController) { }
 
   ngOnInit() {
@@ -31,3 +59,5 @@ export class PerfilPage implements OnInit {
   }
 
 }
+
+

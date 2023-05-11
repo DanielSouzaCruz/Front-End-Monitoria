@@ -1,7 +1,7 @@
 .menu-background {
-    height: 88px;
+    height: 60px;
     width:full;
-    background: blue;
+    background: rgb(3, 199, 3);
 
 
 }
@@ -9,13 +9,13 @@
     margin:0px;
 
     ion-icon{
-        margin-right:20px;
-        color: rgb(20, 175, 180);
+        margin-right:10px;
+        color: rgb(3, 199, 3);
     }
 
     ion-item{
-        padding-left: 20px;
-        margin-bottom:10px;
+        padding-left: 10px;
+        margin-bottom:5px;
     }
 
 }

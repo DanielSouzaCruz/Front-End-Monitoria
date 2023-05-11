@@ -12,8 +12,8 @@
 <ion-content>
   <ion-grid>
     <ion-row>
-      <ion-col class="icon">
-        <ion-icon name="person-circle"></ion-icon>
+      <ion-col class="icon-perfil">
+        <ion-icon name="people-circle-outline"></ion-icon>
       </ion-col>
     </ion-row>
     <ion-row>
@@ -56,8 +56,14 @@
   </ion-grid>
 
   <ion-fab class="butao" slot="fixed" vertical="bottom" horizontal="end">
-    <ion-fab-button size="large" class="botao">
-      <ion-icon name="create-outline"></ion-icon>
+    <ion-fab-button color="success" id="formulario-ajuda" size="large">
+      <ion-icon name="information-circle-outline"></ion-icon>
+        <ion-alert
+        trigger="formulario-ajuda"
+        header="Formulário de Suporte"
+        [buttons]="alertButtons"
+        [inputs]="alertInputs"
+      ></ion-alert>
     </ion-fab-button>
   </ion-fab>
 </ion-content>
