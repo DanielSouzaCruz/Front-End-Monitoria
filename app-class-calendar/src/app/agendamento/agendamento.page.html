@@ -10,22 +10,44 @@
 </ion-header>
 
 <ion-content class="conteudo">
-  <ion-row>
-    <ion-col></ion-col>
-    <ion-col size="12" class="agendamento">
-      Nenhum agendamento confirmado!
-    </ion-col>
-    <ion-col size="12" class="link">
-      <a href="">Agendar monitoria</a>
-    </ion-col>
-  </ion-row>
-
-   <!-- botao do canto -->
-  <ion-fab class="butao" slot="fixed" vertical="bottom" horizontal="end">
-    <ion-fab-button color="success" size="large">
-      <ion-icon name="add"></ion-icon>
-    </ion-fab-button>
-  </ion-fab>
+  <ion-grid class="form-agendamento" >
+    <ion-list>
+      <ion-row >
+        <p>Agende sua monitoria: </p>
+      </ion-row>
+      <ion-row>
+        <ion-col size="3">
+          Data:
+        </ion-col>
+        <ion-col>
+          <ion-datetime-button datetime="datetime"></ion-datetime-button>
+          <ion-modal [keepContentsMounted]="true">
+            <ng-template>
+              <ion-datetime id="datetime"></ion-datetime>
+            </ng-template>
+          </ion-modal>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-select label="Selecione as matérias disponíveis" label-placement="floating" fill="outline">
+          <ion-select-option value="apple">Apple</ion-select-option>
+          <ion-select-option value="banana">Banana</ion-select-option>
+          <ion-select-option value="orange">Orange</ion-select-option>
+        </ion-select>
+      </ion-row>
+      <ion-row>
+        <ion-select label="Selecione os professores disponíveis" label-placement="floating" fill="outline">
+          <ion-select-option value="apple">Apple</ion-select-option>
+          <ion-select-option value="banana">Banana</ion-select-option>
+          <ion-select-option value="orange">Orange</ion-select-option>
+        </ion-select>
+      </ion-row>
+      <ion-row>
+        <ion-textarea class="textarea" label="Dúvidas para monitoria:" labelPlacement="floating" fill="solid" placeholder="Descreva suas dúvidas ao professor."></ion-textarea>
+      </ion-row>
+    </ion-list>
+    
+  </ion-grid>
 
 </ion-content>
 
