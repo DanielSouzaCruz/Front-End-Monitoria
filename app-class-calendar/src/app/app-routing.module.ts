@@ -34,7 +34,8 @@ const routes: Routes = [
   {
     path: 'menu',
     loadChildren: () => import('./menu/menu.module').then( m => m.MenuPageModule)
-  },  {
+  },
+  {
     path: 'cadastrobasico',
     loadChildren: () => import('./cadastrobasico/cadastrobasico.module').then( m => m.CadastrobasicoPageModule)
   }

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ApiService } from '../services/api.service';
+
 
 @Component({
   selector: 'app-cadastrobasico',
@@ -8,8 +8,8 @@ import { ApiService } from '../services/api.service';
 })
 export class CadastrobasicoPage implements OnInit {
 
-  constructor(private apiService: ApiService) {
-    this.createData();
+  constructor() {
+    
    }
   
   ngOnInit() {
