@@ -17,7 +17,20 @@ export class LoginPage implements OnInit {
   userType : any;
 
   goTeste(userType:any){
-    console.log(userType)
+    switch (userType) {
+      case 'aluno':
+        this.navCtrl.navigateForward('home')
+        break;
+      case 'professor':
+        this.navCtrl.navigateForward('professor')
+        break;
+      case 'tecnico':
+        this.navCtrl.navigateForward('menu')
+        break;
+      default:
+        console.log('Selecione seu tipo de usuario');
+        break;
+    }
   }
   
   goHome(){
