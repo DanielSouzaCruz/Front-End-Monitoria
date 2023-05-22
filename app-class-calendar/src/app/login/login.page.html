@@ -44,9 +44,20 @@
       </ion-col>
     </ion-row>
 
+    <ion-row class="ion-justify-content-center">
+      <ion-item>
+        <ion-label>Selecione o tipo:</ion-label>
+        <ion-select [(ngModel)]="userType">
+          <ion-select-option value="professor">Professor</ion-select-option>
+          <ion-select-option value="tecnico">Técnico</ion-select-option>
+          <ion-select-option value="aluno">Aluno</ion-select-option>
+        </ion-select>
+      </ion-item>
+    </ion-row>
+
     <ion-row>
       <ion-col class="ion-text-center button">
-        <ion-button class="button" (click)="goHome()" size="default" expand="full" type="submit"> Entrar </ion-button>
+        <ion-button class="button" (click)="goTeste(userType)" (click)="goHome()"  size="default" expand="full" type="submit"> Entrar </ion-button>
       </ion-col>
     </ion-row>
   </ion-grid>
