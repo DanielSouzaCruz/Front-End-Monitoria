@@ -1,0 +1,89 @@
+<ion-header [translucent]="false">
+  <ion-toolbar class="navebar">
+    <ion-title>
+      CLASSCALENDAR
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-grid class="login">
+    <ion-row>
+      <ion-col>
+        <h1 class="ion-text-center">CADASTRO</h1>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col class="center-icon" size="1">
+      </ion-col>
+      <ion-col>
+        <ion-label>
+          <ion-textarea label="NOME" labelPlacement="floating" fill="outline" placeholder="Digite seu nome"
+            type="text" id="nome" name="nome"></ion-textarea>
+        </ion-label>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col class="center-icon" size="1">
+      </ion-col>
+      <ion-col>
+        <ion-label>
+          <ion-textarea label="CPF" labelPlacement="floating" fill="outline" placeholder="Digite seu cpf"
+            maxlength="11" type="text" id="cpf" name="cpf"></ion-textarea>
+        </ion-label>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col class="center-icon" size="1">
+      </ion-col>
+      <ion-col>
+        <ion-label>
+          <ion-textarea label="TURMA" labelPlacement="floating" fill="outline" placeholder="Digite sua Turma"
+            type="text" id="turma" name="turma"></ion-textarea>
+        </ion-label>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col class="center-icon" size="1">
+      </ion-col>
+      <ion-col>
+        <ion-label>
+          <ion-textarea label="TELEFONE" labelPlacement="floating" fill="outline" placeholder="Digite seu telefone"
+            maxlength="11" type="number" id="telefone" name="telefone"></ion-textarea>
+        </ion-label>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col class="center-icon" size="1">
+      </ion-col>
+      <ion-col>
+        <ion-label>
+          <ion-textarea label="ENDEREÇO" labelPlacement="floating" fill="outline" placeholder="Digite seu endereço"
+            type="text" id="endereco" name="endereco"></ion-textarea>
+        </ion-label>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col class="center-icon" size="1">
+      </ion-col>
+      <ion-col>
+        <ion-label>
+          <ion-input label="SENHA" type="password" label-placement="floating" fill="outline"
+            placeholder="Digite sua senha" id="password" name="password"></ion-input>
+        </ion-label>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col class="ion-text-center button">
+        <ion-button class="button" size="default" expand="full" type="submit"> Cadastrar </ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
