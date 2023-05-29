@@ -7,6 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CadastroPage implements OnInit {
 
+  nome : any
+  endereco : any
+  senha: any
+  telefone: any
+  turma: any
+  cpf: any
+  userType : any;
   constructor() { }
 
   ngOnInit() {
