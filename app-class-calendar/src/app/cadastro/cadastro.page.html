@@ -21,7 +21,7 @@
     <ion-row>
       <ion-col>
         <ion-label >
-          <ion-textarea label="NOME" labelPlacement="floating" fill="outline" placeholder="Digite seu nome"
+          <ion-textarea label="NOME" [(ngModel)]="nome" labelPlacement="floating" fill="outline" placeholder="Digite seu nome"
             type="text" id="nome" name="nome"></ion-textarea>
         </ion-label>
       </ion-col>
@@ -30,7 +30,7 @@
     <ion-row>
       <ion-col>
         <ion-label>
-          <ion-textarea label="CPF" labelPlacement="floating" fill="outline" placeholder="Digite seu cpf"
+          <ion-textarea label="CPF" [(ngModel)]="cpf"  labelPlacement="floating" fill="outline" placeholder="Digite seu cpf"
             maxlength="11" type="text" id="cpf" name="cpf"></ion-textarea>
         </ion-label>
       </ion-col>
@@ -39,7 +39,7 @@
     <ion-row>
       <ion-col>
         <ion-label>
-          <ion-textarea label="TURMA" labelPlacement="floating" fill="outline" placeholder="Digite sua Turma"
+          <ion-textarea label="TURMA" [(ngModel)]="turma"  labelPlacement="floating" fill="outline" placeholder="Digite sua Turma"
             type="text" id="turma" name="turma"></ion-textarea>
         </ion-label>
       </ion-col>
@@ -48,7 +48,7 @@
     <ion-row>
       <ion-col>
         <ion-label>
-          <ion-textarea label="TELEFONE" labelPlacement="floating" fill="outline" placeholder="Digite seu telefone"
+          <ion-textarea label="TELEFONE" [(ngModel)]="telefone"  labelPlacement="floating" fill="outline" placeholder="Digite seu telefone"
             maxlength="11" type="number" id="telefone" name="telefone"></ion-textarea>
         </ion-label>
       </ion-col>
@@ -57,7 +57,7 @@
     <ion-row>
       <ion-col>
         <ion-label>
-          <ion-textarea label="ENDEREÇO" labelPlacement="floating" fill="outline" placeholder="Digite seu endereço"
+          <ion-textarea label="ENDEREÇO" [(ngModel)]="endereco"  labelPlacement="floating" fill="outline" placeholder="Digite seu endereço"
             type="text" id="endereco" name="endereco"></ion-textarea>
         </ion-label>
       </ion-col>
@@ -66,7 +66,7 @@
     <ion-row>
       <ion-col>
         <ion-label>
-          <ion-input label="SENHA" type="password" label-placement="floating" fill="outline"
+          <ion-input label="SENHA" [(ngModel)]="senha"  type="password" label-placement="floating" fill="outline"
             placeholder="Digite sua senha" id="password" name="password"></ion-input>
         </ion-label>
       </ion-col>
@@ -85,7 +85,7 @@
     <ion-row>
       <ion-col>
         <ion-label >
-          <ion-textarea label="NOME" labelPlacement="floating" fill="outline" placeholder="Digite seu nome"
+          <ion-textarea label="NOME" [(ngModel)]="nome"  labelPlacement="floating" fill="outline" placeholder="Digite seu nome"
             type="text" id="nome" name="nome"></ion-textarea>
         </ion-label>
       </ion-col>
@@ -94,7 +94,7 @@
     <ion-row>
       <ion-col>
         <ion-label>
-          <ion-textarea label="CPF" labelPlacement="floating" fill="outline" placeholder="Digite seu cpf"
+          <ion-textarea label="CPF" [(ngModel)]="cpf"  labelPlacement="floating" fill="outline" placeholder="Digite seu cpf"
             maxlength="11" type="text" id="cpf" name="cpf"></ion-textarea>
         </ion-label>
       </ion-col>
@@ -103,7 +103,7 @@
     <ion-row>
       <ion-col>
         <ion-label>
-          <ion-textarea label="TELEFONE" labelPlacement="floating" fill="outline" placeholder="Digite seu telefone"
+          <ion-textarea label="TELEFONE" [(ngModel)]="telefone"  labelPlacement="floating" fill="outline" placeholder="Digite seu telefone"
             maxlength="11" type="number" id="telefone" name="telefone"></ion-textarea>
         </ion-label>
       </ion-col>
@@ -112,7 +112,7 @@
     <ion-row>
       <ion-col>
         <ion-label>
-          <ion-textarea label="ENDEREÇO" labelPlacement="floating" fill="outline" placeholder="Digite seu endereço"
+          <ion-textarea label="ENDEREÇO" [(ngModel)]="endereco"  labelPlacement="floating" fill="outline" placeholder="Digite seu endereço"
             type="text" id="endereco" name="endereco"></ion-textarea>
         </ion-label>
       </ion-col>
@@ -121,7 +121,7 @@
     <ion-row>
       <ion-col>
         <ion-label>
-          <ion-input label="SENHA" type="password" label-placement="floating" fill="outline"
+          <ion-input label="SENHA" [(ngModel)]="senha"  type="password" label-placement="floating" fill="outline"
             placeholder="Digite sua senha" id="password" name="password"></ion-input>
         </ion-label>
       </ion-col>
@@ -140,7 +140,7 @@
     <ion-row>
       <ion-col>
         <ion-label >
-          <ion-textarea label="NOME" labelPlacement="floating" fill="outline" placeholder="Digite seu nome"
+          <ion-textarea label="NOME" [(ngModel)]="nome"  labelPlacement="floating" fill="outline" placeholder="Digite seu nome"
             type="text" id="nome" name="nome"></ion-textarea>
         </ion-label>
       </ion-col>
@@ -149,7 +149,7 @@
     <ion-row>
       <ion-col>
         <ion-label>
-          <ion-textarea label="CPF" labelPlacement="floating" fill="outline" placeholder="Digite seu cpf"
+          <ion-textarea label="CPF" [(ngModel)]="cpf"  labelPlacement="floating" fill="outline" placeholder="Digite seu cpf"
             maxlength="11" type="text" id="cpf" name="cpf"></ion-textarea>
         </ion-label>
       </ion-col>
@@ -159,7 +159,7 @@
     <ion-row>
       <ion-col>
         <ion-label>
-          <ion-textarea label="TELEFONE" labelPlacement="floating" fill="outline" placeholder="Digite seu telefone"
+          <ion-textarea label="TELEFONE" [(ngModel)]="telefone"  labelPlacement="floating" fill="outline" placeholder="Digite seu telefone"
             maxlength="11" type="number" id="telefone" name="telefone"></ion-textarea>
         </ion-label>
       </ion-col>
@@ -168,7 +168,7 @@
     <ion-row>
       <ion-col>
         <ion-label>
-          <ion-textarea label="ENDEREÇO" labelPlacement="floating" fill="outline" placeholder="Digite seu endereço"
+          <ion-textarea label="ENDEREÇO" [(ngModel)]="endereco"  labelPlacement="floating" fill="outline" placeholder="Digite seu endereço"
             type="text" id="endereco" name="endereco"></ion-textarea>
         </ion-label>
       </ion-col>
@@ -177,7 +177,7 @@
     <ion-row>
       <ion-col>
         <ion-label>
-          <ion-input label="SENHA" type="password" label-placement="floating" fill="outline"
+          <ion-input label="SENHA" [(ngModel)]="senha"  type="password" label-placement="floating" fill="outline"
             placeholder="Digite sua senha" id="password" name="password"></ion-input>
         </ion-label>
       </ion-col>
