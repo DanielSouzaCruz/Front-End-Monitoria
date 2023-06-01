@@ -37,6 +37,26 @@ const routes: Routes = [
   },  {
     path: 'cadastro',
     loadChildren: () => import('./cadastro/cadastro.module').then( m => m.CadastroPageModule)
+  },
+  {
+    path: 'professor-detalhe',
+    loadChildren: () => import('./professor-detalhe/professor-detalhe.module').then( m => m.ProfessorDetalhePageModule)
+  },
+  {
+    path: 'aluno',
+    loadChildren: () => import('./aluno/aluno.module').then( m => m.AlunoPageModule)
+  },
+  {
+    path: 'tecnico',
+    loadChildren: () => import('./tecnico/tecnico.module').then( m => m.TecnicoPageModule)
+  },
+  {
+    path: 'aluno-detalhe',
+    loadChildren: () => import('./aluno-detalhe/aluno-detalhe.module').then( m => m.AlunoDetalhePageModule)
+  },
+  {
+    path: 'tecnico-detalhe',
+    loadChildren: () => import('./tecnico-detalhe/tecnico-detalhe.module').then( m => m.TecnicoDetalhePageModule)
   }
 
 

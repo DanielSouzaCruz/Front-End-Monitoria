@@ -61,7 +61,7 @@ ion-content.conteudo {
     color: black;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
     justify-content: center;
     height: 150px;
     font-size: 0.9em;
@@ -84,4 +84,8 @@ ion-content.conteudo {
       color: blue($color: #000000);
     }
   }
+}
+
+.itemEstilo{
+  --ion-item-background: rgb(192, 192, 192);
 }
