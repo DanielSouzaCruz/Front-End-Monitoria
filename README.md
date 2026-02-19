@@ -1,7 +1,7 @@
 # Front-End-Monitoria
 Front-End do trabalho de Disciplina Programação para Dispositivos moveis, em Ionic
 
-Este projeto foi desenvolvido durante o 5 semestre no curso de Engenharia de Software, na UNICV. OBS(Trabalho em grupo);
+Este projeto foi desenvolvido durante o 5º semestre no curso de Engenharia de Software, na UNICV. OBS(Trabalho em grupo);
 
 Tem como objetivo realizar nosso primeiro projeto totalmento completo com Back-End e Front-End (voltado para dispositivos moveis);
 
