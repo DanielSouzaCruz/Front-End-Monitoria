@@ -11,7 +11,7 @@ Documentação com diagramas ,documento de requisitos e realtorios! https://driv
 
 Link dos repositorios originais:
 
-1- INTREGRAÇÃO: https://github.com/GuilhermeFerreira42/entidade;
+1- INTEGRAÇÃO: https://github.com/GuilhermeFerreira42/entidade;
 
 2- BACK-END: https://github.com/nickoolaz/Trabalho-Esw;
 
